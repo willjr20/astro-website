@@ -23,10 +23,16 @@ const { title = ["Astro Crash Course"] } = Astro.props as Props;
             rel="stylesheet"
         />
         <title>{title}</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+        />
     </head>
     <body>
-        <Header /> 
-        <slot /> 
+        <Header />
+        <slot />
         <Footer />
+        <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"
+        ></script>
     </body>
 </html>
